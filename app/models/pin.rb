@@ -6,4 +6,5 @@ class Pin < ActiveRecord::Base
 
 	validates :image, presence: true
   	validates :story, presence: true
+  
 end
