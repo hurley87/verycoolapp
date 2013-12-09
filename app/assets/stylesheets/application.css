@@ -12,3 +12,8 @@
  *= 'masonry/transitions'
  *= require_tree .
  */
+
+
+ .about {
+ 	color: white;
+ }
