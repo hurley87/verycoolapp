@@ -16,11 +16,14 @@
           <% end %>
         <% end %>
       <div class="panel-heading text-center">
+        <p><%= @pin.boss %></p>
         <%= image_tag @pin.image.url(:medium) %>
+        <p></p>
+        <p><%= @pin.quote%></p>
       </div>
       <div class="panel-body">
-        <p><%= @pin.boss %></p>
-        <p><%= @pin.quote%></p>
+        
+        
         <p><%= @pin.story %></p>
         <p><strong><%= @pin.user.name if @pin.user %></strong></p>
 
