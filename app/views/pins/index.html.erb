@@ -9,13 +9,13 @@
       <%= link_to image_tag(pin.image.url(:medium)), pin %>
       <div class="panel-body">
       
-         <br/>
+         
         <%= pin.quote %><br/><br/>
-        <strong><%= pin.user.name if pin.user %></strong>
+        <div class="pull-right"><strong><%= pin.user.name if pin.user %></strong></div>
         <% if pin.user == current_user %>
           <div class="actions panel-footer">
             <%= link_to 'Edit', edit_pin_path(pin) %> |
-            <%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' } %>
+            <%= link_to 'Delete', pin, method: :delete, data: { confirm: 'Are you sure?' } %>
           </div>
         <% end %>
       </div>
