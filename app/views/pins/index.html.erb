@@ -4,13 +4,13 @@
 <div id="pins" class="transitions-enabled">
   <% @pins.each do |pin| %>
     <div class="box panel panel-default">
-      <h3 class="text-center"><%= pin.boss %></h3>
+      <h3 class="text-center"><b><%= pin.boss %></b></h3>
       
       <%= link_to image_tag(pin.image.url(:medium)), pin %>
       <div class="panel-body">
       
          
-        <%= pin.quote %><br/><br/>
+        <i><%= pin.quote %></i><br/><br/>
         <div class="pull-right"><strong><%= pin.user.name if pin.user %></strong></div>
         <% if pin.user == current_user %>
           <div class="actions panel-footer">
