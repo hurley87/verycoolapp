@@ -1,5 +1,8 @@
 <%= render 'pages/home' unless user_signed_in? %>
 
+<div class="text-center">
+  <%= will_paginate @posts, renderer: BootstrapPagination::Rails %>
+</div>
 
 <div id="pins" class="transitions-enabled">
   <% @pins.each do |pin| %>
@@ -23,6 +26,4 @@
   <% end %>
 </div>
 
-<div class="text-center">
-  <%= will_paginate @posts, renderer: BootstrapPagination::Rails %>
-</div>
+
