@@ -6,7 +6,7 @@
  <p></p>
 
 <div class="row">
-  <div class="col-md-offset-2 col-md-8">
+  <div class="">
     <div class="panel panel-default">
 
       <% if @pin.user == current_user %>
@@ -24,7 +24,7 @@
       <div class="panel-body">
         
         
-        <p><%= @pin.post %></p>
+        <p class="lead"><%= @pin.post %></p>
         <p><strong><%= @pin.user.name if @pin.user %></strong></p>
 
         <div id="disqus_thread"></div>
